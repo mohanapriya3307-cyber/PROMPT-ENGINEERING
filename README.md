@@ -193,7 +193,9 @@ Lack of True Understanding: GenAI models predict statistical patterns; they do n
 
 ## 2.	Focusing on Generative AI architectures. (like transformers).
 ## CHATGPT
-<img width="1224" height="1285" alt="image" src="https://github.com/user-attachments/assets/21263d99-1d52-4e4d-bd5e-59ffc055da0c" />
+
+<img width="1312" height="1199" alt="image" src="https://github.com/user-attachments/assets/7f1674f0-1fab-4ee8-b692-245b9bfd3af6" />
+
 
 ## Major Architectures of Generative AI – Short Descriptions
 
@@ -225,6 +227,82 @@ VAEs (Variational Autoencoders): Learn compressed representations of data in a l
 
 Diffusion Models: Learn to generate content by reversing a gradual noise-removal process. They are widely used in image generation and can also support audio and video generation.
 <img width="790" height="425" alt="image" src="https://github.com/user-attachments/assets/0f4e0e20-2e59-477e-ba8c-959c458dded5" />
+
+## Gemini
+# Deep Dive into Generative AI Architectures: The Transformer & Beyond
+
+## 1. Foundational Concepts of Neural Networks & Data Representation
+
+Before looking at Transformers, it helps to understand how machines perceive and process human language and data:
+
+* **Neural Networks:** Computational systems inspired by the human brain. They consist of layers of interconnected artificial "neurons" that pass signals, adjust weights based on errors during training, and learn to recognize complex patterns.
+
+
+* **Tokens:** Because computers process numbers rather than raw text, input text is first broken down into smaller pieces called **tokens** (which can be whole words, parts of words, or characters). For example, the word *"unbelievable"* might be split into subword tokens: `["un", "believ", "able"]`.
+* **Embeddings:** Once text is tokenized, each token is converted into a high-dimensional numerical vector called an **embedding**. These vectors map semantic meaning: words with similar meanings (like *"king"* and *"queen"*) are placed mathematically close to one another in this vector space.
+* **Positional Encoding:** Traditional sequential models read text one word at a time, but Transformers process all tokens simultaneously (in parallel). To prevent the model from losing word order, **positional encodings** (unique mathematical values representing position) are added to token embeddings so the model knows which word comes first, second, or last
+
+  
+## 2. Core Components of the Transformer Architecture
+
+Introduced in 2017, the Transformer revolutionized AI by relying entirely on attention mechanisms rather than traditional sequential processing.
+
+* **Self-Attention:** This is the heart of the Transformer. It allows every token in a sentence to look at and evaluate the importance of *every other token* simultaneously. For example, in the sentence *"The bank of the river,"* self-attention helps the model understand that *"bank"* refers to land/water, not a financial institution, by looking at surrounding context words. It does this by creating three vectors for each token: **Queries (Q), Keys (K), and Values (V)**, calculating dot-product attention scores to determine token relationships.
+* **Multi-Head Attention:** Instead of calculating attention just once, the model runs multiple "attention heads" in parallel. One head might track grammatical structure, while another tracks long-distance semantic meaning.
+* **Feed-Forward Networks (FFN):** After attention layers mix information between tokens, each token's representation passes through a fully connected feed-forward network (multilayer perceptron) that transforms and refines the data independently.
+* **Encoder and Decoder:**
+* The **Encoder** reads and analyzes the input sequence, converting it into a deep contextual representation.
+* The **Decoder** takes that representation and generates the output sequence step by step (used heavily in text generation models). (Many modern models, like GPT, are *decoder-only* systems).
+
+
+## 3. Transformer Architecture Flowchart & Step-by-Step Breakdown
+
+```text
+  [ Input Text / User Prompt ]
+               │
+               ▼
+     [ 1. Tokenization ] 
+  (Splitting text into words/subwords)
+               │
+               ▼
+     [ 2. Embeddings & Positional Encoding ] 
+  (Converting tokens to vectors & adding word-order tags)
+               │
+               ▼
+     [ 3. Self-Attention Mechanism ] 
+  (Weighing the contextual relationships between all words)
+               │
+               ▼
+     [ 4. Feed-Forward Networks ] 
+  (Refining individual token representations)
+               │
+               ▼
+     [ 5. Un-Embedding / Output Layer ] 
+  (Converting final vectors back into word probabilities)
+               │
+               ▼
+  [ Generated Next Token / Output ]
+
+```
+
+### Explanation of Steps:
+
+1. **Tokenization:** Raw text is broken down into numerical token IDs using a predefined vocabulary.
+2. **Embeddings & Positional Encoding:** Token IDs are converted into dense semantic vectors, and positional vectors are added so word sequence order is preserved.
+3. **Self-Attention:** The model computes Query, Key, and Value matrices to let words communicate, capturing context, pronouns, and modifiers across the whole sentence.
+4. **Feed-Forward Networks:** Non-linear layers process the attended features, allowing the network to perform complex logical computations on the data.
+5. **Un-Embedding & Output:** A linear and softmax layer translates the final vector back into a probability distribution over the vocabulary, picking the most likely next word or token.
+
+## 4. Practical Demonstration: How a Transformer Processes a Sentence
+
+Let's trace a simple sentence through the model: **"The cat sat on the mat."**
+
+1. **Input & Tokenization:** The sentence is split into tokens: `["The", "cat", "sat", "on", "the", "mat"]`.
+2. **Embedding & Position:** Each token gets a numerical vector telling the AI *what* it means and *where* it sits in the sentence structure.
+3. **Self-Attention Execution:** When processing the word *"sat"*, the self-attention mechanism connects it strongly to *"cat"* (to understand *who* sat) and *"mat"* (to understand *where* it sat).
+4. **Generation Output:** The model predicts the subsequent continuation token with the highest mathematical probability based on the learned context.
+<img width="470" height="652" alt="image" src="https://github.com/user-attachments/assets/5011a798-5a03-4b18-9589-64d561545e30" />
+
 
 ## 3.	Generative AI applications.
 ## CHATGPT
