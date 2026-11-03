@@ -347,6 +347,8 @@ Generative AI may provide more personalized education, assist healthcare profess
 Generative AI is transforming education, healthcare, business, software development, entertainment, and scientific research. It can create many types of content and improve productivity, but responsible use, human supervision, and ethical safeguards are essential to ensure that its benefits outweigh its risks.
 ## GEMINI
 Generative AI has evolved from an experimental machine-learning discipline into a foundational technology spanning almost every sector of modern society. Below is a comprehensive breakdown of its primary domain applications, modality mechanisms, benefits, ethical implications, and future directions.
+<img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/5814bb3b-b676-4a56-bf75-da292552780d" />
+
 
 ## Mind Map: Generative AI Ecosystem
 The diagram below depicts how a central Generative AI neural engine branches into diverse domains:
@@ -466,6 +468,9 @@ Scaling plays an important role in improving Large Language Models by combining 
 ## GEMINI
 Introduction to LLM Scaling
 Large Language Models (LLMs) such as ChatGPT, Claude, and Gemini have revolutionized artificial intelligence. At the heart of their rapid progress is a simple yet powerful idea: Scaling.
+<img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/d726e84b-9b62-401c-85cd-4e7b4d151f0b" />
+
+
 
 Scaling refers to the practice of making AI models larger, training them on more text, and using vastly more computational horsepower. Rather than inventing entirely new algorithms every year, AI researchers discovered that simply expanding the scale of existing deep learning architectures reliably makes models smarter, more coherent, and more capable across a wide variety of tasks.
 
