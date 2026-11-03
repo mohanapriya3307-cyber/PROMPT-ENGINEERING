@@ -79,6 +79,21 @@ Step 7: Finalize and Export
 ## CHATGPT
 
 Generative AI (GenAI) is a type of Artificial Intelligence that learns patterns from existing data and uses them to create new content, such as text, images, audio, videos, and computer code.
+1. Introduction
+Artificial Intelligence (AI) is a technology that enables computers to perform tasks that normally require human intelligence, such as learning, problem-solving, decision-making and understanding language.
+
+Generative Artificial Intelligence (Generative AI) is an advanced branch of AI that can create new content such as text, images, videos, music and computer code.
+
+Today, Generative AI is widely used in education, healthcare, business, entertainment and software development.
+
+2. Definition of Generative AI
+Generative AI is a type of artificial intelligence that learns patterns and information from existing data and uses that knowledge to generate new and original content.
+
+Simple definition: Generative AI is a technology that creates new content based on the instructions or prompts given by users.
+
+For example:
+- Input: "Write a poem about nature."
+- Output: A newly generated poem about nature.
 
 ## Key concepts
 1. Data: Text, images, audio, and other information used to train AI models.
