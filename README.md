@@ -77,8 +77,6 @@ Step 7: Finalize and Export
 # Output
 ## 1.	Explain the foundational concepts of Generative AI.
 ## CHATGPT
-<img width="1312" height="1199" alt="image" src="https://github.com/user-attachments/assets/89ec0cec-939c-435a-b128-470250480b3b" />
-## Short outline description
 
 Generative AI (GenAI) is a type of Artificial Intelligence that learns patterns from existing data and uses them to create new content, such as text, images, audio, videos, and computer code.
 
@@ -109,7 +107,9 @@ Training Data → Model Training → Trained Model → User Prompt → Generated
 
 Infographic: Foundational concepts, working process, and types of Generative AI
 
-<img width="1200" height="754" alt="image" src="https://github.com/user-attachments/assets/b5f0ed5a-8e35-4aaa-8ddc-325e297063d4" />
+
+<img width="1312" height="1199" alt="image" src="https://github.com/user-attachments/assets/65403c23-5e96-4f3a-8d0d-9d350d2bcaaa" />
+
 
 In short: Generative AI learns patterns from data and uses them to generate new content in response to user prompts.
 ## GEMINI
@@ -153,7 +153,9 @@ Code Generation Models: Specialized models trained on programming repositories t
 
 ## Flowchart: How Generative AI Generates Content
 Below is a clear, labeled conceptual flowchart illustrating the step-by-step journey of a prompt transforming into final content:
-<img width="450" height="670" alt="image" src="https://github.com/user-attachments/assets/ad286d44-ab21-49d8-9ce8-ff9787332687" />
+
+<img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/2d2b1818-6290-4c11-b0ab-2ea32b4f8354" />
+
 
 ## Advantages of Generative AI
 
